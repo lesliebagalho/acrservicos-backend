@@ -131,6 +131,20 @@ export async function initDb() {
         )
       `);
 
+      await client.query(`
+        CREATE TABLE IF NOT EXISTS noticias (
+          id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+          slug VARCHAR(255),
+          title TEXT NOT NULL,
+          date VARCHAR(10),
+          excerpt TEXT,
+          content TEXT,
+          image TEXT,
+          created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+          updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        )
+      `);
+
       console.log('[DB] Database tables created successfully');
 
       // Ensure existing tables have required columns (safe for already-created DBs)

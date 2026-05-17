@@ -9,6 +9,7 @@ import servicosRoutes from './routes/servicos.js';
 import heroSlidesRoutes from './routes/heroSlides.js';
 import linhasRoutes from './routes/linhas.js';
 import contatoRoutes from './routes/contato.js';
+import noticiasRoutes from './routes/noticias.js';
 
 dotenv.config();
 
@@ -51,6 +52,7 @@ app.use('/api/servicos', servicosRoutes);
 app.use('/api/hero-slides', heroSlidesRoutes);
 app.use('/api/linhas', linhasRoutes);
 app.use('/api/contato', contatoRoutes);
+app.use('/api/noticias', noticiasRoutes);
 
 // Initialize database and start server
 (async () => {
