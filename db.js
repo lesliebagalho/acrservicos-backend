@@ -13,7 +13,7 @@ if (!connectionString) {
   const dbPass = process.env.DATABASE_PASSWORD || '';
   const dbHost = process.env.DATABASE_HOST || 'localhost';
   const dbPort = process.env.DATABASE_PORT || '5432';
-  const dbName = process.env.DATABASE_NAME || 'midautomacao';
+  const dbName = process.env.DATABASE_NAME || 'acrservicos';
   
   connectionString = `postgresql://${dbUser}:${dbPass}@${dbHost}:${dbPort}/${dbName}`;
 }

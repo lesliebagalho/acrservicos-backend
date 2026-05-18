@@ -246,7 +246,7 @@ router.post('/', async (req, res) => {
     const html = `
       <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;padding:24px;border:1px solid #e8e8e8;border-radius:8px">
         ${linhas}
-        <p style="margin-top:24px;font-size:12px;color:#999">Enviado pelo site midautomacao.com.br</p>
+        <p style="margin-top:24px;font-size:12px;color:#999">Enviado pelo site acrservicos.com.br</p>
       </div>`;
 
     // Envia email

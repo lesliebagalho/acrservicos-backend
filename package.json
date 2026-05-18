@@ -1,7 +1,7 @@
 {
-  "name": "midautomacao-backend",
+  "name": "acrservicos-backend",
   "version": "1.0.0",
-  "description": "Backend API for MID Automação - Node.js + Express + PostgreSQL",
+  "description": "Backend API para ACR Serviços - Node.js + Express + PostgreSQL",
   "main": "server.js",
   "type": "module",
   "scripts": {
